@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tabulator Custom Styles */
+.tabulator {
+  @apply font-sans border-0;
+}
+
+.tabulator .tabulator-header {
+  @apply bg-gray-50 border-b border-gray-200;
+}
+
+.tabulator .tabulator-header .tabulator-col {
+  @apply bg-transparent border-0;
+}
+
+.tabulator .tabulator-header .tabulator-col-content {
+  @apply px-6 py-3;
+}
+
+.tabulator .tabulator-header .tabulator-col-title {
+  @apply text-xs font-medium text-gray-500 uppercase tracking-wider;
+}
+
+.tabulator .tabulator-row {
+  @apply border-b border-gray-200;
+}
+
+.tabulator .tabulator-row .tabulator-cell {
+  @apply px-6 py-4 text-sm text-gray-900;
+}
+
+.tabulator .tabulator-row.tabulator-row-even {
+  @apply bg-white;
+}
+
+.tabulator .tabulator-row.tabulator-row-odd {
+  @apply bg-gray-50;
+}
+
+.tabulator-row .tabulator-cell.tabulator-editing {
+  @apply border border-indigo-500 shadow-sm;
+}
+
+.tabulator-row .tabulator-cell.tabulator-editing input,
+.tabulator-row .tabulator-cell.tabulator-editing select {
+  @apply border-0 rounded-md focus:ring-2 focus:ring-indigo-500 w-full;
+}
+
+.delete-btn {
+  @apply px-3 py-1 text-sm font-medium rounded-md hover:bg-red-50 transition-colors;
+}
